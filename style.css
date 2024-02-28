@@ -1,0 +1,85 @@
+.calculator{
+    width: 300px;
+    background-color: #91f340;
+    margin: 50px auto 10px auto;
+    padding: 7px;
+    border-radius: 5px;
+    display: block;
+      
+    }
+    h1{
+      text-align: center;
+    }
+    
+    #layar{
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #d30bb8;
+      font-size: 50px;
+      font-weight: bold;
+      color: rgb(8, 8, 243);
+      padding: 7px 5px;
+      text-align: right;
+      outline: none;
+    }
+    
+    .container-tombol{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .tombol{
+      display: flex;
+      width: 25%;
+      font-size: 20px;
+      color: rgb(202, 21, 21);
+      border: 1px solid #161016;
+      font-weight: bold;
+      height: 70px;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .tombol:nth-child(4n+1){
+      border-left: 1px solid #d7d3db;
+    }
+    
+    .tombol:hover{
+      background-color: #d45e10;
+      cursor: pointer;
+    }
+    #nol{
+      flex-grow: 2;
+    }
+    #operator{
+      background-color: #12ddec;
+    }
+    
+    #hitung{
+      background-color: ffa64a;
+      color: rgb(5, 5, 5);
+    }
+    
+    #hitung:hover{
+      background-color: #ff4a8f;
+      cursor: pointer;
+    }
+    
+    footer{
+      padding: 5px;
+    }
+    footer li{
+      list-style: none;
+    }
+    footer a{
+      color: black;
+    }
+    
+    /*HP*/
+    @media (max-width: 576px){
+      .calculator{
+        width: 90%;
+        height: 90%;
+      }
+    }
